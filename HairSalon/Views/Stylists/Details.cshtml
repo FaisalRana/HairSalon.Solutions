@@ -1,0 +1,21 @@
+@model HairSalon.Models.Stylist
+@using HairSalon.Models;
+
+<h2> @Html.DisplayFor(model => model.Name) Details</h2>
+<hr />
+<h3>@Html.DisplayNameFor(model => model.Speciality): @Html.DisplayFor(model => model.Speciality)</h3>
+<p>@Html.ActionLink("Edit Stylist", "Edit", new { id = Model.StylistId })</p>
+<p>@Html.ActionLink("Delete Stylist", "Delete", new { id = Model.StylistId })</p>
+<p>@Html.ActionLink("Back to list", "Index")</p>
+<h1>Clients:</h1>
+@if (@Model.Clients.Count == 0)
+{
+  <h3>No Clients have been added yet! Please click add client to continue.</h3>
+}
+  @foreach(Client client in Model.Clients)
+  {
+      <li>@Html.ActionLink($"{client.Name}", "Details", "Clients", new { id = client.ClientId })</li>
+  }
+<ul>
+<p>@Html.ActionLink("See all Clients", "Index", "Clients")</p>
+<p>@Html.ActionLink("Add new client", "Create", "Clients")</p>

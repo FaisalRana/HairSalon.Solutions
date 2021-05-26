@@ -1,0 +1,18 @@
+@model HairSalon.Models.Stylist
+
+
+<h2>Edit</h2>
+
+<h4>Edit @Html.DisplayFor(model => model.Name)'s information.</h4>
+
+@using (Html.BeginForm())
+{
+  @Html.HiddenFor(model => model.StylistId)
+  <p>Edit Name:</p>@Html.LabelFor(model => model.Name)
+  @Html.EditorFor(model => model.Name)
+  
+  <p>Edit Speciality:</p>@Html.LabelFor(model => model.Speciality)
+  @Html.EditorFor(model => model.Speciality)
+  <input type="submit" value="Save" />
+}
+<p>@Html.ActionLink("Back to list", "Index")</p>
