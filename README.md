@@ -58,7 +58,7 @@ This web application is built for a HairSalon to manage their employees and styl
 
 ## Diagram of the One-To-Many relationship used in this project
 
-![Image of SQL Designer](wwwroot/images/schema_design.png)
+![Image of SQL Designer](HairSalon/wwwroot/images/schema_design.png)
 
 
 ## Known Bugs
