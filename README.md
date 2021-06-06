@@ -47,7 +47,7 @@ This web application is built for a HairSalon to manage their employees and styl
 * In the _Navigator_ > _Schemas_ tab, right click and select _Refresh All_. The new database will appear.
 * Alternatively, you can use access mysql through the terminal and using the following commands:
 
-![Image of SQL Commands](wwwroot/images/MySqlCommands.png)
+![Image of SQL Commands](hairsalon/wwwroot/images/MySqlCommands.png)
 
 
 * _In Visual Studio Code, navigate to the `HairSalon` directory and create an **appsettings.json** file and input the following script 
